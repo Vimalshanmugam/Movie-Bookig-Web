@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book My Ticket</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+<body>
+    <nav class="nav">
+        <div class="lgo">
+            <h1>Book My Ticket</h1>
+        </div>
+
+        <div class="srch">
+            <input type="search" name="search" id="" placeholder="search now">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="item">
+            <a href="index.html">Home</a>
+            <a href="#movie-sec">Movie</a>
+            <a href="#booktickets">Book Ticket</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="btn">
+           <a href="signin-signup.html"> <input type="button" value="Sign in"></a>
+           <a href="signin-signup.html"> <input type="button" value="Sign up"></a>
+        </div>
+    </nav>
+
+    <section class="banner">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <img src="image/banner2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/banner3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/banner4.avif" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/banner5.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/banner6.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/banner7.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/banner8.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/banner9.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/Youtube.webp" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="left">
+        </div>
+
+        <div class="right">
+            <section id="booktickets">
+            <h1>Book Now</h1>
+
+            <div class="main-box">
+                <div class="box1">
+                    <label for="Select Movie">Select Movie</label>
+                    <select>
+                        <option value="movie">Leo</option>
+                        <option value="movie">Vadakkupatti Ramasamy</option>
+                        <option value="movie">Kanguva</option>
+                        <option value="movie">Singapore Saloon</option>
+                        <option value="movie">Mercy</option>
+                        <option value="movie">Captain Miller</option>
+                        <option value="movie">Kannagi</option>
+                        <option value="movie">Odavum Mudiyadhu Oliyavum Mudiyadhu</option>
+                        <option value="movie">Parking</option>
+                        <option value="movie">Ayalaan</option>
+                    </select>
+                </div>
+
+                <div class="box1">
+                    <label for="Select Movie">Select a Session</label>
+                    <select>
+                        <option value="movie">10AM</option>
+                        <option value="movie">2PM</option>
+                        <option value="movie">6PM</option>
+                        <option value="movie">10PM</option>
+                    </select>
+                </div>
+
+                <div class="box1">
+                    <label for="Select Movie">Select a theatre</label>
+                    <select>
+                        <option value="movie">Sathyam Cinemas</option>
+                        <option value="movie">Nexus Vijaya Mall</option>
+                        <option value="movie">Luxe Cinemas</option>
+                        <option value="movie">Palazzo</option>
+                        <option value="movie">Sri Sakthi Cinemas</option>
+                        <option value="movie">ARRS Multiplex</option>
+                        <option value="movie">Inox</option>
+                        <option value="movie">Rajam Cinemas</option>
+                        <option value="movie">Vimal Cinemas</option>
+                    </select>
+                </div>
+
+                <div class="btn">
+                   <a href="book.html" target="_blank"><button>Book Ticket</button></a> 
+                </div>
+            </div>
+        </section>
+        </div>
+    </section>
+
+    <section class="movie-sec">
+        <div class="menu">
+            <a class="#show" href="#">Now Showing</a>
+            <a href="#">Upcoming Movies</a>
+            <a href="#">New Audio Relesae</a>
+            <a href="#">New Video Relesae</a>
+        </div>
+
+        <div class="main-box">
+            <div class="box">
+                <img src="image/post1.webp" alt="">
+                <p class="re">10k Review</p>
+                <div class="txt">
+                    <p class="head">Don NO1.</p>
+                    <p class="dir">ACTOR:- Shahrukhkhan</p>
+                    <p class="dir">Director:- Farhan Akhtar</p>
+                    <a href="book.html" target="_blank"><button>Book Now</button></a> 
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/post1.jpg" alt="">
+                <p class="re">10k Review</p>
+                <div class="txt">
+                    <p class="head">Odavum Mudiyathu <br>Oliyavum Mudiyathu.</p>
+                    <p class="dir">ACTOR:- Sathyamurthi</p>
+                    <p class="dir">Director:- Ramesh Venkat</p>
+                    <a href="book.html" target="_blank"><button>Book Now</button></a> 
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/post3.jpg" alt="">
+                <p class="re">10k Review</p>
+                <div class="txt">
+                    <p class="head">Singapore Saloon.</p>
+                    <p class="dir">ACTOR:- RJ Balaji</p>
+                    <p class="dir">Director:- Gokul</p>
+                    <a href="book.html" target="_blank"><button>Book Now</button></a> 
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/post4.jpg" alt="">
+                <p class="re">10k Review</p>
+                <div class="txt">
+                    <p class="head">kannagi.</p>
+                    <p class="dir">ACTOR:- Keerthi <br> Pandian</p>
+                    <p class="dir">Director:- Yashwanth <br> Kishore</p>
+                    <a href="book.html" target="_blank"><button>Book Now</button></a> 
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/post2.avif" alt="">
+                <p class="re">10k Review</p>
+                <div class="txt">
+                    <p class="head">Parking.</p>
+                    <p class="dir">ACTOR:- Harishkalyan</p>
+                    <p class="dir">Director:- Ramkumar <br> Balakrishnan</p>
+                    <a href="book.html" target="_blank"><button>Book Now</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/post5.jpg" alt="">
+                <p class="re">10k Review</p>
+                <div class="txt">
+                    <p class="head">Ayalaan.</p>
+                    <p class="dir">ACTOR:- Sivakarthikeyan</p>
+                    <p class="dir">Director:- R. Ravikumar</p>
+                    <a href="book.html" target="_blank"><button>Book Now</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/post6.jpg" alt="">
+                <p class="re">10k Review</p>
+                <div class="txt">
+                    <p class="head">Beast.</p>
+                    <p class="dir">ACTOR:- Vijay</p>
+                    <p class="dir">Director:- Nelson <br> Dilipkumar</p>
+                    <a href="book.html" target="_blank"><button>Book Now</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/post8.avif" alt="">
+                <p class="re">10k Review</p>
+                <div class="txt">
+                    <p class="head">Jawan.</p>
+                    <p class="dir">ACTOR:- Shahrukhkhan</p>
+                    <p class="dir">Director:- Atlee Kumar</p>
+                    <a href="book.html" target="_blank"><button>Book Now</button></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/post9.jpg" alt="">
+                <p class="re">10k Review</p>
+                <div class="txt">
+                    <p class="head">Fan.</p>
+                    <p class="dir">ACTOR:- Shahrukhkhan</p>
+                    <p class="dir">Director:- Maneesh Sharma</p>
+                    <a href="book.html" target="_blank"><button>Book Now</button></a>
+                </div>
+                
+                
+            </div>
+            <div class="box">
+                <img src="image/post7.jpg" alt="">
+                <p class="rel">10k Review</p>
+                <div class="txt">
+                    <p class="head">Mission.</p>
+                    <p class="dir">ACTOR:- Arun Vijay</p>
+                    <p class="dir">Director:- Vijay</p>
+                    <a href="book.html" target="_blank"><button>Book Now</button></a>
+                </div>
+             <div class="box">
+                    <img src="image/post11.jpg" alt="">
+                    <p class="re">10k Review</p>
+                    <div class="txt">
+                        <p class="head">KPA.</p>
+                        <p class="dir">ACTOR:- Owen Teague</p>
+                        <p class="dir">Director:- Wes Ball</p>
+                        <a href="book.html" target="_blank"><button>Book Now</button></a>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img src="image/post10.avif" alt="">
+                    <p class="re">10k Review</p>
+                    <div class="txt">
+                        <p class="head">Aquaman.</p>
+                        <p class="dir">ACTOR:- Jason Momoa</p>
+                        <p class="dir">Director:- James Wan</p>
+                        <a href="book.html" target="_blank"><button>Book Now</button></a>
+                    </div>
+                </div>             
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="foot">
+        <div class="main-box">
+            <div class="box">
+                <h1>Quick Link</h1>
+                <div class="item">
+                    <a href="#">Button</a>
+                    <a href="#">Button</a>
+                    <a href="#">Button</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h1>Quick Link</h1>
+                <div class="item">
+                    <a href="#">Button</a>
+                    <a href="#">Button</a>
+                    <a href="#">Button</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h1>Quick Link</h1>
+                <div class="item">
+                    <a href="#">Button</a>
+                    <a href="#">Button</a>
+                    <a href="#">Button</a>
+                </div>
+            </div>
+
+            <div class="box box4">
+                <h1>Quick Link</h1>
+                <div class="social">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-pinterest"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="copy">
+            <p>Copyright &copy; 2024 Design By Vimal</p>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>

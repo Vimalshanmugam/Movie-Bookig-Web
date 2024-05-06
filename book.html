@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="book.css" >
+</head>
+<body>
+    <form action="">
+        <h1>Booking</h1>
+        
+        <fieldset>
+            <legend>Seat Details</legend>
+            <label for="seatType">Seatplace:</label>
+            <select id="seatType" >
+                <option value="">Select Seat</option>
+                <!-- <option value="seating">Seating</option> -->
+                <option value="first_class">First Class</option>
+                <option value="second_class">Second Class</option>
+            </select>
+            <br>
+            <span id="error-mes" class="error"></span>
+            
+            <label for="seatCount">No of seats:</label>
+            <input type="number" id="seatCount" placeholder="1" >
+            <br>
+            <span id="error-mess" class="error"></span>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Payment Information</legend>
+            <label for="paymentOption">Payment Option:</label>
+            <select id="paymentOption" required>
+                <option value="">Select Payment Option</option>
+                <option value="upi">UPI</option>
+                <option value="phone_pay">PHONE PAY</option>
+                <option value="gpay">GPAY</option>
+            </select>
+            <br>
+            <span id="error-messs" class="error"></span>
+            
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="500" >
+            <br>
+            <span id="error-messss"class="error"></span>
+            
+            <label for="acNo">AC No:</label>
+            <input type="number" id="acNo" placeholder="12345678" >
+            <br>
+            <span id="error-messsss" class="error"></span>
+        </fieldset>
+        
+        <button id="Payid" onclick="formvalidation()">Proceed to Payment</button>
+    </form>
+    <script src="book.js"></script>
+</body>
+</html>
