@@ -11,6 +11,10 @@
 const container = document.querySelector('.container');
 const btns = document.querySelectorAll('.swiper-slide')
 const imgList = ["1","2","3","4"]
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.navbar').classList.toggle('active');
+});
+
 
 let index=0
 btns.forEach((button)=>{

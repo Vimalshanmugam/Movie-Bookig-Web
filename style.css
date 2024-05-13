@@ -290,3 +290,148 @@ body {
     align-items: center;
     padding-top: 40px;
 }
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-toggle i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .navbar.active .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+    }
+
+    .swiper {
+        width: 100%;
+        height: auto;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    .right {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .main-box {
+        padding-top: 20px;
+    }
+
+    .box1 {
+        margin-bottom: 20px;
+    }
+
+    .box1 select {
+        width: 100%;
+    }
+
+    .btn {
+        justify-content: center;
+    }
+
+    .btn button {
+        padding: 10px 50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        flex-direction: row;
+        height: auto;
+        padding: 20px;
+    }
+
+    .srch {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .item {
+        flex-direction: row;
+        row-gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        flex-direction: row;
+        row-gap: 10px;
+    }
+
+    .banner .left img {
+        width: 100%;
+    }
+
+    .banner .right {
+        width: 100%;
+    }
+
+    .banner .right .main-box .box1 select {
+        width: 100%;
+    }
+
+    .banner .right .main-box .btn button {
+        width: 100%;
+    }
+
+    .movie-sec .menu {
+        flex-direction: row;
+        row-gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .movie-sec .main-box .box {
+        flex-direction: column;
+        display: inline;
+        row-gap: 10px;
+        margin: 10px 0;
+        padding: 15px;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .movie-sec .main-box .box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .movie-sec .main-box .box .re,
+    .movie-sec .main-box .box .rel {
+        margin-left: 0;
+    }
+
+    .foot .main-box {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .foot .box {
+        margin-bottom: 20px;
+    }
+
+    .foot .box4 .social i {
+        font-size: 20px;
+    }
+}
+
