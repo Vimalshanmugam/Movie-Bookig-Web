@@ -240,3 +240,22 @@ body {
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+@media screen and (max-width: 300px) {
+    .container {
+        width: 90%; /* Adjust container width for smaller screens */
+        max-width: 100%;
+    }
+    .form-container, .toggle-container {
+        width: 100%; /* Make form and toggle containers full-width */
+        left: 0;
+    }
+    .toggle {
+        width: 200%; /* Double the width to accommodate both panels side by side */
+    }
+    .toggle-panel {
+        width: 100%; /* Make toggle panels full-width */
+    }
+    .toggle-left {
+        transform: translateX(-100%); /* Initially hide left toggle panel */
+    }
+}

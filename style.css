@@ -76,65 +76,25 @@ body {
 
 .banner {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
-
-.banner .left img {
-    width: 65vw;
-}
-
-.swiper {
+.banner .swiper {
     width: 100%;
-    height: 100%;
+    max-width: 100%;
 }
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.swiper-slide img {
-    display: block;
+.banner .swiper .swiper-slide img {
     width: 100%;
-    height: 520px;
-    object-fit: cover;
+    height: auto;
 }
 
 .banner .right {
-    background-color: whitesmoke;
-    width: 34vw;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    height: 460px;
-    align-items: center;
-}
-
-.banner .right .main-box {
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
-    row-gap: 40px;
-}
-
-.banner .right .main-box .box1 {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-}
-
-.banner .right .main-box .box1 select {
-    height: 40px;
-    border: none;
-    border-bottom: 2px solid black;
-    background-color: whitesmoke;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
 }
 
 .banner .right .main-box .btn {
@@ -166,15 +126,25 @@ body {
     column-gap: 20px;
 }
 
-.movie-sec .menu .show{
-    color: red;
-    border-bottom: 2px solid red;
+.movie-sec .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
-.movie-sec .menu a{
+.movie-sec .menu a {
     text-decoration: none;
-    color: black;
-    padding: 15px 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.movie-sec .menu a:hover {
+    background-color: #ff5722;
+    color: #fff;
 }
 
 .movie-sec .main-box{
@@ -230,54 +200,119 @@ body {
     width: fit-content;
     cursor: pointer;
 }
+#booktickets {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-.foot{
-    height: 200px;
-    background-image: linear-gradient(45deg, #051a22, #050528);
+#booktickets h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#booktickets .main-box {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#booktickets .main-box .box1,
+#booktickets .main-box .box2,
+#booktickets .main-box .box3,
+#booktickets .main-box .btn {
+    flex: 1;
+}
+
+#booktickets .main-box label {
+    font-size: 18px;
+}
+
+#booktickets .main-box select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#booktickets .main-box .btn button {
+    width: 100%;
+    max-width: 200px;
+    padding: 12px 20px;
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5722;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+    .movie-sec .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-sec .menu a {
+        margin-bottom: 10px;
+    }
+}
+.foot {
+    background-image: linear-gradient(45deg, #051a22, #050528);
     color: white;
-    flex-direction: column;
     padding: 30px;
 }
 
-.foot .main-box{
-    column-gap: 200px;
+.foot .main-box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    /* align-items: center; */
+    gap: 30px; /* Adjust the gap between boxes */
 }
 
-.foot .box{
+.foot .box {
+    flex: 1; /* Allow boxes to take up equal space */
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    gap: 20px; /* Adjust the gap between items */
 }
 
-.foot .box .item{
-    display: flex;
-    column-gap: 30px;
-    flex-direction: column;
-    row-gap: 10px;
-    align-items: center;
+.foot .box h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
-.foot .box .item a{
-    color: rgb(114, 110, 110);
+.foot .box .item a {
+    color: #ccc; /* Adjust link color */
     text-decoration: none;
+    transition: color 0.3s ease; /* Add transition effect for color change */
 }
 
-.foot .box4 .social{
+.foot .box .item a:hover {
+    color: #fff; /* Change link color on hover */
+}
+
+.foot .box4 .social {
     display: flex;
-    align-items: center;
     justify-content: center;
-    column-gap: 14px;
+    gap: 14px;
 }
 
-.foot .box4 .social i{
+.foot .box4 .social i {
     font-size: 25px;
     color: aquamarine;
     cursor: pointer;
+    transition: color 0.3s ease; /* Add transition effect for color change */
+}
+
+.foot .box4 .social i:hover {
+    color: #fff; /* Change social icon color on hover */
+}
+
+.copy {
+    text-align: center;
+    margin-top: 20px; /* Add some space between content and copyright */
 }
 .box button:hover{
     color: whitesmoke;
@@ -290,7 +325,7 @@ body {
     align-items: center;
     padding-top: 40px;
 }
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     .menu {
         display: none;
     }
@@ -432,6 +467,107 @@ body {
 
     .foot .box4 .social i {
         font-size: 20px;
+    } 
+}*/
+/* Add media queries for tablet and mobile screens */
+@media only screen and (max-width: 768px) {
+    /* Adjust navigation */
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .item {
+        flex-direction: row;
+        row-gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        flex-direction: row;
+        row-gap: 10px;
+    }
+
+    /* Adjust search input */
+    .srch {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Adjust banner */
+    .banner .left img {
+        width: 100%;
+    }
+
+    .banner .right {
+        width: 100%;
+    }
+
+    .banner .right .main-box .box1 select {
+        width: 100%;
+    }
+
+    .banner .right .main-box .btn button {
+        width: 100%;
+    }
+
+    /* Adjust movie section */
+    .movie-sec .menu {
+        flex-direction: row;
+        row-gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .movie-sec .main-box .box {
+        flex-direction: column;
+        display: inline;
+        row-gap: 10px;
+        margin: 10px 0;
+        padding: 15px;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .movie-sec .main-box .box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .movie-sec .main-box .box .re,
+    .movie-sec .main-box .box .rel {
+        margin-left: 0;
+    }
+
+    /* Adjust footer */
+    .foot .main-box {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .foot .box {
+        margin-bottom: 20px;
+    }
+
+    .foot .box4 .social i {
+        font-size: 20px;
+    }
+    @media only screen and (max-width: 768px) {
+        #booktickets h1 {
+            font-size: 20px;
+        }
+    
+        #booktickets .main-box {
+            flex-direction: column;
+        }
+    
+        #booktickets .main-box .box {
+            width: 100%;
+        }
+    
+        #booktickets .main-box .btn button {
+            max-width: 100%;
+        }
     }
 }
 
