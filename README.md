@@ -1,1 +1,1 @@
-Movie-Booking-Web-URL : https://book-my-ticketss.netlify.app/
+Movie Booking-Web-URL : https://book-my-ticketss.netlify.app/
